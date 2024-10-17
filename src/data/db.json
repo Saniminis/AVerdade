@@ -7,16 +7,16 @@
       "precoProduto": "1610"
     },
     {
-      "id": "40db",
-      "nomeProduto": "Banana",
-      "categoriaProduto": "452",
-      "precoProduto": "2"
+      "id": "e2c0",
+      "nomeProduto": "Patinho",
+      "categoriaProduto": "Gelados",
+      "precoProduto": "9.99"
     },
     {
-      "id": "ebf4",
-      "nomeProduto": "Banana",
-      "categoriaProduto": "Orgânico",
-      "precoProduto": "2"
+      "id": "11d9",
+      "nomeProduto": "Alcatra",
+      "categoriaProduto": "Gelados",
+      "precoProduto": "32.81"
     }
   ],
   "usuarios": [
