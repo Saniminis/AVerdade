@@ -1,8 +1,5 @@
 import React from 'react'
-
-// CSS
 import styles from './index.module.css'
-
 
 const index = () => {
   return (
@@ -11,3 +8,5 @@ const index = () => {
 }
 
 export default index
+
+// pq revisar e refazer isso foi tão ruim? 

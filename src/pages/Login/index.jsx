@@ -5,30 +5,19 @@ import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Nav from "react-bootstrap/Nav";
 import { useState, useEffect } from "react";
-
 import { useNavigate } from 'react-router-dom';
-
 import styles from './index.module.css'
 
 const url = "http://localhost:3000/usuarios";
-
-const Login = () => {
+  const Login = () => {
   const navigate = useNavigate();
-
-  
-  // variaveis pro usuario
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
-
-  // variaveis pro alerta
   const [alertaClass, setAlertaClass] = useState("mb-3 d-none");
   const [alertaMensagem, setAlertaMensagem] = useState("");
   const [alertaVariant, setAlertaVariant] = useState("danger");
-
-  //Lista de usuarios
   const [usuarios, setUsuarios] = useState([]);
 
-  //Resgate de dados da API
   useEffect(() => {
     async function fetchData() {
       try {
@@ -53,7 +42,6 @@ const Login = () => {
 
     const user = { email, senha };
 
-    //Verifica na lista de usuarios se tem o usuario digitado
     const userToFind = usuarios.find(
       (userFind) => userFind.email == user.email
     );
@@ -65,17 +53,9 @@ const Login = () => {
           console.log("entrou");
           setAlertaClass("mb-3");
           gravarLocalStorage(userToFind)
-          // alert("Login efetuado com Sucesso");
-          setAlertaMensagem("Login efetuado com Sucesso");
-          setAlertaVariant("success");
-          
+          setAlertaMensagem("Logado efetuado com Sucesso");
+          setAlertaVariant("sucesso");
           navigate('/CadastroProdutos')
-
-
-          
-
-
-
 
         } else {
           setAlertaClass("mb-3");
@@ -94,40 +74,31 @@ const Login = () => {
   return (
     <div>
       <Container>
-        <span className={`material-symbols-outlined, `} style={{ fontSize: "100px" }}>
-          login
+        <span className={`material-symbols-outlined, `} style={{fontSize: "100px" }}> 
         </span>
         <form onSubmit={handleLogin}>
-          {/* caixinha do email */}
           <FloatingLabel
             controlId="floatingInputEmail"
             label="Email"
-            className="mb-3"
-          >
+            className="mb-3">
             <Form.Control
               type="email"
               placeholder="name@example.com"
               value={email}
               onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-            />
+                setEmail(e.target.value);}}/>
           </FloatingLabel>
-
-          {/* caixinha da senha */}
+          
           <FloatingLabel
             controlId="floatingPassword"
             label="Senha"
-            className="mb-3"
-          >
+            className="mb-3">
             <Form.Control
               type="password"
               placeholder="Password"
               value={senha}
               onChange={(e) => {
-                setSenha(e.target.value);
-              }}
-            />
+                setSenha(e.target.value);}}/>
           </FloatingLabel>
 
           <Alert key="danger" variant={alertaVariant} className={alertaClass}>
@@ -135,18 +106,14 @@ const Login = () => {
           </Alert>
 
           <Button 
-          variant="primary" 
+         variant="primary" 
           type="submit"
           className={styles.btnCadastrar}>
-            Enviar
+            LOGAR
           </Button>
         </form>
-
-          <p>Dica de email: adm@gmail.com</p>
-          <p>Dica de senha: 12345</p>
       </Container>
     </div>
   );
 };
-
 export default Login;

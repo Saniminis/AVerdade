@@ -1,20 +1,12 @@
 .mainContainer{
 
-
 }
-
-
 .cadastrarBtn {
-    width: 40% !important;
+    width: 20% !important;
     height: 3rem;
-
     margin-top: 1rem;
     margin-left: 50%;
     transform: translateX(-50%);
-    
-
-
-
 }
 
 h1{

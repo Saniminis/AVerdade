@@ -1,30 +1,48 @@
 {
   "produtos": [
     {
-      "id": "f2e2",
-      "nomeProduto": "1610",
-      "categoriaProduto": "1610",
-      "precoProduto": "1610"
+      "id": "48e3",
+      "nomeProduto": "uuu",
+      "categoriaProduto": "uuu",
+      "precoProduto": "111"
     },
     {
-      "id": "e2c0",
-      "nomeProduto": "Patinho",
-      "categoriaProduto": "Gelados",
-      "precoProduto": "9.99"
+      "id": "1496",
+      "nomeProduto": "oi",
+      "categoriaProduto": "oi",
+      "precoProduto": "4"
     },
     {
-      "id": "11d9",
-      "nomeProduto": "Alcatra",
-      "categoriaProduto": "Gelados",
-      "precoProduto": "32.81"
+      "id": "1ec5",
+      "nomeProduto": "q",
+      "categoriaProduto": "q",
+      "precoProduto": "3"
+    },
+    {
+      "id": "ff0b",
+      "nomeProduto": "g",
+      "categoriaProduto": "g",
+      "precoProduto": "5"
+    },
+    {
+      "id": "368b",
+      "nomeProduto": "h",
+      "categoriaProduto": "h",
+      "precoProduto": "6"
+    },
+    {
+      "id": "e997",
+      "nomeProduto": "x",
+      "categoriaProduto": "x",
+      "precoProduto": "9"
     }
   ],
   "usuarios": [
     {
       "id": "1",
       "nome": "adm",
-      "email": "adm@gmail.com",
-      "senha": "12345",
+      "email": "admin@gmail.com",
+      "senha": "4321",
       "tipo": "Administrador"
     }
   ]

@@ -1,8 +1,5 @@
 import React from 'react'
-
-// CSS
 import styles from './index.module.css'
-
 
 const index = () => {
   return (
