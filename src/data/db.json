@@ -1,48 +1,24 @@
 {
   "produtos": [
     {
-      "id": "48e3",
-      "nomeProduto": "uuu",
-      "categoriaProduto": "uuu",
-      "precoProduto": "111"
+      "id": "9645",
+      "nomeProduto": "Carne com chocolate",
+      "tipoProduto": "bovino e doce",
+      "precoProduto": "50"
     },
     {
-      "id": "1496",
-      "nomeProduto": "oi",
-      "categoriaProduto": "oi",
-      "precoProduto": "4"
-    },
-    {
-      "id": "1ec5",
-      "nomeProduto": "q",
-      "categoriaProduto": "q",
-      "precoProduto": "3"
-    },
-    {
-      "id": "ff0b",
-      "nomeProduto": "g",
-      "categoriaProduto": "g",
+      "id": "645d",
+      "nomeProduto": "pé de mula",
+      "tipoProduto": "pé",
       "precoProduto": "5"
-    },
-    {
-      "id": "368b",
-      "nomeProduto": "h",
-      "categoriaProduto": "h",
-      "precoProduto": "6"
-    },
-    {
-      "id": "e997",
-      "nomeProduto": "x",
-      "categoriaProduto": "x",
-      "precoProduto": "9"
     }
   ],
   "usuarios": [
     {
       "id": "1",
       "nome": "adm",
-      "email": "admin@gmail.com",
-      "senha": "4321",
+      "email": "docemel@sodoce.com.br",
+      "senha": "brigadeiro123",
       "tipo": "Administrador"
     }
   ]

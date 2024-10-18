@@ -13,23 +13,23 @@ const CadastroProdutos = () => {
   const [alertaMensagem, setAlertaMensagem] = useState('')
   const [precoProduto, setPrecoProduto] = useState("")
   const [url] = useState("http://localhost:3000/produtos")
-  const [categoriaProduto, setCategoriaProduto] = useState("")
+  const [tipoProduto, setTipoProduto] = useState("")
   const [alertaClass, setAlertaClass] = useState('mb-3 d-none')
   const handleSubmit = async (e) =>{    
   e.preventDefault()
     
     if(!nomeProduto == "" ){
-    if(!categoriaProduto == ""){
+    if(!tipoProduto == ""){
     if(!precoProduto == ""){
           
-      const produto = {nomeProduto, categoriaProduto, precoProduto}
+      const produto = {nomeProduto, tipoProduto, precoProduto}
       const res = await fetch(url, {
         method: "POST",
         headers: {"Content-Type": "application/json"},
           body: JSON.stringify(produto)})
           alert("Produto cadastrado com sucesso!!")
           setNomeProduto("")
-          setCategoriaProduto("")
+          setTipoProduto("")
           setPrecoProduto("")
         }
         else{
@@ -75,16 +75,16 @@ const CadastroProdutos = () => {
           </FloatingLabel>
 
           <FloatingLabel
-            controlId="categoriaProdutoInput"
-            label="Categoria do produto"
+            controlId="tipoProdutoInput"
+            label="Tipo do produto"
             className="mb-3">
             <Form.Control 
             type="text"
             placeholder="name@example.com" 
-            value={categoriaProduto}
+            value={tipoProduto}
               onChange={(e)=>{
-                  setCategoriaProduto(e.target.value)
-                  console.log(categoriaProduto)}}/>
+                  setTipoProduto(e.target.value)
+                  console.log(tipoProduto)}}/>
           </FloatingLabel>
 
           <FloatingLabel

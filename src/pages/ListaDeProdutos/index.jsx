@@ -34,7 +34,7 @@ const [produtos, setProdutos] = useState([]);
           <thead>
             <tr>             
               <th>Nome </th>
-              <th>Categoria</th>
+              <th>Tipo</th>
               <th>Preço</th>
               <th></th>
             </tr>
@@ -43,7 +43,7 @@ const [produtos, setProdutos] = useState([]);
             {produtos.map((produto) => (
               <tr key={produto.id}>
                 <td>{produto.nomeProduto}</td>
-                <td>{produto.categoriaProduto}</td>
+                <td>{produto.tipoProduto}</td>
                 <td>{produto.precoProduto} R$ </td>
                 <td>
                   <ButtonGroup size="sm">
