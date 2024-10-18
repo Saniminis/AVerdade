@@ -11,7 +11,7 @@ import Container from 'react-bootstrap/Container';
 function App() {
 
   return (
-    <>  
+    <div>  
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login/>}/>
@@ -19,7 +19,7 @@ function App() {
           <Route path="/CadastroProdutos" element={<CadastroProdutos/>}/>
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
